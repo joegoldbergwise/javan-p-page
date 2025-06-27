@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0d1f1a;
+  color: #dfeeea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.profile {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #1a332c;
+  background-image: url('https://via.placeholder.com/180');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px #082b23;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #5aff89;
+  margin-bottom: 0.2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #a9cfc3;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  color: #cbe7dc;
+}
+
+.tags {
+  margin-bottom: 2rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #1a463a;
+  color: #b0f5d3;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin: 4px;
+  transition: background 0.3s ease;
+}
+
+.tag:hover {
+  background: #238c6f;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #238c6f;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2fd1a2;
+}
+
+.gallery-section {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-section h3 {
+  color: #78ffd6;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 100px;
+  height: 100px;
+  background-color: #1a332c;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: auto;
+  font-size: 0.85rem;
+  color: #67998d;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
